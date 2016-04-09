@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4039821CB8A67D00614451 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4039811CB8A67D00614451 /* UserRouter.swift */; };
 		2AEDBD2D1CB4FD5E005D97A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDBD2C1CB4FD5E005D97A0 /* AppDelegate.swift */; };
 		2AEDBD2F1CB4FD5E005D97A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDBD2E1CB4FD5E005D97A0 /* ViewController.swift */; };
 		2AEDBD321CB4FD5E005D97A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEDBD301CB4FD5E005D97A0 /* Main.storyboard */; };
 		2AEDBD341CB4FD5E005D97A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AEDBD331CB4FD5E005D97A0 /* Assets.xcassets */; };
 		2AEDBD371CB4FD5E005D97A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEDBD351CB4FD5E005D97A0 /* LaunchScreen.storyboard */; };
+		2AEDBD421CB63D00005D97A0 /* UserNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDBD411CB63D00005D97A0 /* UserNetworking.swift */; };
+		2AEDBD441CB63DCB005D97A0 /* SDUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDBD431CB63DCB005D97A0 /* SDUser.swift */; };
+		2AEDBD461CB640E9005D97A0 /* SDAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDBD451CB640E9005D97A0 /* SDAddress.swift */; };
 		C56DE87569049E71891051B5 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7B57C6C9E3FE6A5747FD8B /* Pods_SwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4039811CB8A67D00614451 /* UserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		2AEDBD291CB4FD5D005D97A0 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEDBD2C1CB4FD5E005D97A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AEDBD2E1CB4FD5E005D97A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,6 +28,9 @@
 		2AEDBD331CB4FD5E005D97A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AEDBD361CB4FD5E005D97A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AEDBD381CB4FD5E005D97A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AEDBD411CB63D00005D97A0 /* UserNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNetworking.swift; sourceTree = "<group>"; };
+		2AEDBD431CB63DCB005D97A0 /* SDUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDUser.swift; sourceTree = "<group>"; };
+		2AEDBD451CB640E9005D97A0 /* SDAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDAddress.swift; sourceTree = "<group>"; };
 		6E7B57C6C9E3FE6A5747FD8B /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD78E2F3CED0554C33DF5920 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F5FCE6494503A4F92D979003 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 				2AEDBD331CB4FD5E005D97A0 /* Assets.xcassets */,
 				2AEDBD351CB4FD5E005D97A0 /* LaunchScreen.storyboard */,
 				2AEDBD381CB4FD5E005D97A0 /* Info.plist */,
+				2AEDBD411CB63D00005D97A0 /* UserNetworking.swift */,
+				2AEDBD431CB63DCB005D97A0 /* SDUser.swift */,
+				2AEDBD451CB640E9005D97A0 /* SDAddress.swift */,
+				2A4039811CB8A67D00614451 /* UserRouter.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -226,7 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AEDBD2F1CB4FD5E005D97A0 /* ViewController.swift in Sources */,
+				2A4039821CB8A67D00614451 /* UserRouter.swift in Sources */,
+				2AEDBD461CB640E9005D97A0 /* SDAddress.swift in Sources */,
+				2AEDBD441CB63DCB005D97A0 /* SDUser.swift in Sources */,
 				2AEDBD2D1CB4FD5E005D97A0 /* AppDelegate.swift in Sources */,
+				2AEDBD421CB63D00005D97A0 /* UserNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
