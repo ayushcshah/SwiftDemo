@@ -15,19 +15,21 @@ class ViewController:   UIViewController,
 
     @IBOutlet weak var userTableView: UITableView!
 
+    var users : [SDUser] = []
+
     // MARK: - View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Setup Method
-        setupUI()
+        setupData()
     }
 
     // MARK: - Table View DataSource
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return users.count
     }
 
     func tableView(tableView: UITableView,
@@ -38,17 +40,27 @@ class ViewController:   UIViewController,
                                     "cell",
                                     forIndexPath: indexPath) as UITableViewCell
 
-        if let userNameTextLabel = cell.textLabel {
-            userNameTextLabel.text = "Swift"
+        if let nameLabel = cell.textLabel {
+            nameLabel.text = users[indexPath.row].name
+        }
+        if let cityLabel = cell.detailTextLabel, userAddress = users[indexPath.row].address {
+            cityLabel.text = userAddress.city
         }
 
         return cell
     }
 
-    // MARK: - UI Setup Method
+    // MARK: - Setup Method
 
-    func setupUI() {
-        userTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    func setupData() {
+        UserNetworking().getAllUser { (SDUsers, error) in
+            if let users = SDUsers {
+                self.users = users
+                self.userTableView.reloadData()
+            } else {
+                print(error?.localizedDescription)
+            }
+        }
     }
 
 }
